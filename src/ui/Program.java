@@ -23,9 +23,9 @@ public class Program {
 		
 		PasswordValidator validator = new PasswordValidator(Arrays.asList(
 				new LenghtRule(8, 30),
-				new CharacterRule(EnglishCharacterData.UpperCase, 2),
+				new CharacterRule(EnglishCharacterData.UpperCase, 1),
 				new CharacterRule(EnglishCharacterData.LowerCase, 1),
-				new CharacterRule(EnglishCharacterData.Digit, 2),
+				new CharacterRule(EnglishCharacterData.Digit, 1),
 				new CharacterRule(EnglishCharacterData.Special, 1),
 				new WhitespaceRule()));
 		
